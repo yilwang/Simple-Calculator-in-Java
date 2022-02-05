@@ -1,10 +1,8 @@
 public class Calculator{
   // Constructor
-    public Calculator () 
-  {
-	  
-  }
-  // method of adding
+    public Calculator () {}
+ 
+ // method of adding
   public int add (int a, int b) {
  	return a+b;
  	}
@@ -25,7 +23,6 @@ public class Calculator{
     if (b !=0 )
     {
       return a/b;
- 
     }
     else {
     System.out.println("Error! Dividing by zero is not allowed.");
@@ -50,8 +47,10 @@ public class Calculator{
   Calculator myCalculator = new Calculator();
   System.out.println(myCalculator.add(5,7)); 
   System.out.println(myCalculator.subtract(45,11));
+  System.out.println(myCalculator.multiply(6,9));
+  System.out.println(myCalculator.divide(15,0));
+  System.out.println(myCalculator.divide(15,3));
+  System.out.println(myCalculator.module(15,6));
   }  
-  
-
   
 }
